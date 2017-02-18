@@ -4,7 +4,7 @@ FINAL_EPSILON = 0.0001 # final value of epsilon
 
 class RandomActionGenerator():
     def __init__(self):
-        self.epsilon = 0.01
+        self.epsilon = 0.005
 
     def adapt_action(self, action_index):
         if random.random() < self.epsilon:

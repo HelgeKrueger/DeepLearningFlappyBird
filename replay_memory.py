@@ -23,7 +23,7 @@ class ReplayMemory():
 
     def append(self, item):
         self.deque.append(item)
-        if len(self.deque) > self.max_size:
+        while len(self.deque) > self.max_size:
             self.deque.popleft()
 
     def get_training_sample(self):
