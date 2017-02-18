@@ -1,3 +1,8 @@
 # ignore all pyc files.
 *.pyc
+*.swp
+virtualenv
+.cache
+*.h5
+*.pickle
 
